@@ -1,0 +1,39 @@
+{
+  "response": {
+    "status": "success",
+    "message": "Select query successfully executed",
+    "api_cost": "0.46 BC",
+    "result": [
+      {
+        "hid": "1",
+        "house_name": "Sack",
+        "house_occupancy_count": "1",
+        "cost_of_rent": "0",
+        "cost_to_purchase": "0",
+        "unlockable_id": "1000",
+        "cash_earned_while_renting": "0",
+        "cash_earned_when_sold": "0"
+      },
+      {
+        "hid": "2",
+        "house_name": "Hut House",
+        "house_occupancy_count": "2",
+        "cost_of_rent": "100",
+        "cost_to_purchase": "10000",
+        "unlockable_id": "1001",
+        "cash_earned_while_renting": "100",
+        "cash_earned_when_sold": "3000"
+      },
+      {
+        "hid": "3",
+        "house_name": "Small House",
+        "house_occupancy_count": "4",
+        "cost_of_rent": "500",
+        "cost_to_purchase": "50000",
+        "unlockable_id": "1002",
+        "cash_earned_while_renting": "500",
+        "cash_earned_when_sold": "15000"
+      }
+    ]
+  }
+}

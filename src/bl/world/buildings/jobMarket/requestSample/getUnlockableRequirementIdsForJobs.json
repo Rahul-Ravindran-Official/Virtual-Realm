@@ -1,0 +1,34 @@
+{
+  "response": {
+    "status": "success",
+    "message": "Select query successfully executed",
+    "api_cost": "0.461 BC",
+    "result": [
+      {
+        "jrlid": "1",
+        "jid": "1",
+        "requirement_id": "1"
+      },
+      {
+        "jrlid": "2",
+        "jid": "1",
+        "requirement_id": "2"
+      },
+      {
+        "jrlid": "3",
+        "jid": "2",
+        "requirement_id": "1"
+      },
+      {
+        "jrlid": "4",
+        "jid": "2",
+        "requirement_id": "2"
+      },
+      {
+        "jrlid": "5",
+        "jid": "2",
+        "requirement_id": "3"
+      }
+    ]
+  }
+}

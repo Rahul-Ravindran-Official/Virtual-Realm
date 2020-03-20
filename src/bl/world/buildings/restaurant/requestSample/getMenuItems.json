@@ -1,0 +1,79 @@
+{
+  "response": {
+    "status": "success",
+    "message": "Select query successfully executed",
+    "api_cost": "1.098 BC",
+    "result": [
+      {
+        "item_name": "Veg Zinger",
+        "energy_gain": "10",
+        "item_cost": "130",
+        "availability": "1",
+        "probability_of_poisoning": "1",
+        "hp_drain_from_poison": "30",
+        "menu_item_id": "1",
+        "restaurant_id": "1"
+      },
+      {
+        "item_name": "Chicken Zinger",
+        "energy_gain": "20",
+        "item_cost": "150",
+        "availability": "1",
+        "probability_of_poisoning": "5",
+        "hp_drain_from_poison": "60",
+        "menu_item_id": "2",
+        "restaurant_id": "1"
+      },
+      {
+        "item_name": "Potato Krisper",
+        "energy_gain": "30",
+        "item_cost": "40",
+        "availability": "1",
+        "probability_of_poisoning": "0.5",
+        "hp_drain_from_poison": "20",
+        "menu_item_id": "3",
+        "restaurant_id": "1"
+      },
+      {
+        "item_name": "Potato Krisper",
+        "energy_gain": "30",
+        "item_cost": "40",
+        "availability": "1",
+        "probability_of_poisoning": "0.5",
+        "hp_drain_from_poison": "20",
+        "menu_item_id": "3",
+        "restaurant_id": "3"
+      },
+      {
+        "item_name": "Potato Krisper",
+        "energy_gain": "30",
+        "item_cost": "40",
+        "availability": "1",
+        "probability_of_poisoning": "0.5",
+        "hp_drain_from_poison": "20",
+        "menu_item_id": "3",
+        "restaurant_id": "4"
+      },
+      {
+        "item_name": "Chicken Longer",
+        "energy_gain": "40",
+        "item_cost": "59",
+        "availability": "1",
+        "probability_of_poisoning": "3",
+        "hp_drain_from_poison": "70",
+        "menu_item_id": "4",
+        "restaurant_id": "1"
+      },
+      {
+        "item_name": "Chicken Longer",
+        "energy_gain": "40",
+        "item_cost": "59",
+        "availability": "1",
+        "probability_of_poisoning": "3",
+        "hp_drain_from_poison": "70",
+        "menu_item_id": "4",
+        "restaurant_id": "2"
+      }
+    ]
+  }
+}

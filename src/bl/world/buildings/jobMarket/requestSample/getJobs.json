@@ -1,0 +1,49 @@
+{
+  "response": {
+    "status": "success",
+    "message": "Select query successfully executed",
+    "api_cost": "1.082 BC",
+    "result": [
+      {
+        "jid": "1",
+        "job_name": "Beg",
+        "energy_consumed_per_click": "20",
+        "cash_earned_per_click": "1",
+        "bribe_to_join": "0",
+        "probability_of_accident": "10",
+        "accident_damage_limit_min": "10",
+        "accident_damage_limit_max": "40"
+      },
+      {
+        "jid": "2",
+        "job_name": "Wash Cars",
+        "energy_consumed_per_click": "30",
+        "cash_earned_per_click": "5",
+        "bribe_to_join": "30",
+        "probability_of_accident": "8",
+        "accident_damage_limit_min": "10",
+        "accident_damage_limit_max": "30"
+      },
+      {
+        "jid": "3",
+        "job_name": "Bartender",
+        "energy_consumed_per_click": "10",
+        "cash_earned_per_click": "10",
+        "bribe_to_join": "150",
+        "probability_of_accident": "30",
+        "accident_damage_limit_min": "5",
+        "accident_damage_limit_max": "15"
+      },
+      {
+        "jid": "4",
+        "job_name": "Post Man",
+        "energy_consumed_per_click": "35",
+        "cash_earned_per_click": "30",
+        "bribe_to_join": "0",
+        "probability_of_accident": "5",
+        "accident_damage_limit_min": "30",
+        "accident_damage_limit_max": "80"
+      }
+    ]
+  }
+}

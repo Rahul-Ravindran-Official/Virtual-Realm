@@ -1,0 +1,49 @@
+{
+  "response": {
+    "status": "success",
+    "message": "Select query successfully executed",
+    "api_cost": "0.496 BC",
+    "result": [
+      {
+        "rid": "1",
+        "restaurant_name": "KFC",
+        "coordinate_x": "1",
+        "coordinate_y": "3",
+        "is_tippable": "1",
+        "opening_time": "7",
+        "closing_time": "20",
+        "closed_message": "Closed for the day"
+      },
+      {
+        "rid": "2",
+        "restaurant_name": "Mainland China",
+        "coordinate_x": "1",
+        "coordinate_y": "4",
+        "is_tippable": "1",
+        "opening_time": "10",
+        "closing_time": "23",
+        "closed_message": "We are Closed !!"
+      },
+      {
+        "rid": "3",
+        "restaurant_name": "Taste of Arabia",
+        "coordinate_x": "1",
+        "coordinate_y": "5",
+        "is_tippable": "1",
+        "opening_time": "8",
+        "closing_time": "19",
+        "closed_message": "Closed for the day"
+      },
+      {
+        "rid": "4",
+        "restaurant_name": "Moe's",
+        "coordinate_x": "1",
+        "coordinate_y": "5",
+        "is_tippable": "1",
+        "opening_time": "8",
+        "closing_time": "19",
+        "closed_message": "We are Closed !!"
+      }
+    ]
+  }
+}

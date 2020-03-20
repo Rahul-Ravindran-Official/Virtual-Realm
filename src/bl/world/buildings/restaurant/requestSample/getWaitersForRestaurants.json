@@ -1,0 +1,41 @@
+{
+  "response": {
+    "status": "success",
+    "message": "Select query successfully executed",
+    "api_cost": "0.993 BC",
+    "result": [
+      {
+        "waiter_id": "1",
+        "name": "Amanda Halts",
+        "age": "21",
+        "tippable": "1",
+        "luck": "10",
+        "restaurant_id": "1"
+      },
+      {
+        "waiter_id": "2",
+        "name": "Steve Zuckerberg",
+        "age": "26",
+        "tippable": "1",
+        "luck": "20",
+        "restaurant_id": "1"
+      },
+      {
+        "waiter_id": "3",
+        "name": "Lilly Walt",
+        "age": "19",
+        "tippable": "1",
+        "luck": "5",
+        "restaurant_id": "1"
+      },
+      {
+        "waiter_id": "1",
+        "name": "Amanda Halts",
+        "age": "21",
+        "tippable": "1",
+        "luck": "10",
+        "restaurant_id": "2"
+      }
+    ]
+  }
+}
