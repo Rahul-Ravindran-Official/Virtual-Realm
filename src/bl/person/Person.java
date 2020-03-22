@@ -1,11 +1,9 @@
 package bl.person;
 
 import bl.annotations.Tested;
+import bl.game.LocalConfig;
 import bl.person.systems.*;
-import bl.person.systems.abstractSystems.EnergySystem;
-import bl.person.systems.abstractSystems.HappinessSystem;
-import bl.person.systems.abstractSystems.HealthSystem;
-import bl.person.systems.abstractSystems.LuckSystem;
+import bl.person.systems.abstractSystems.*;
 import bl.world.buildings.bank.BankMaster;
 import bl.world.buildings.restaurant.RestaurantMaster;
 import bl.world.peripherals.time.Time;
@@ -13,7 +11,7 @@ import bl.world.peripherals.time.Time;
 public class Person {
 
     private static String personName = "Rahul Ravindran";
-    private static String payableName = "PERSON";
+    private static String payableName = "PERSON"; // TODO - In the future this is required to be unique for multi-player transaction
 
     // External Systems Access
     private Time time = Time.getInstance();
@@ -24,6 +22,8 @@ public class Person {
     public PurseSystem purseSystem = PurseSystem.getInstance();
     public HappinessSystem happinessSystem = HappinessSystem.getInstance();
     public LuckSystem luckSystem = LuckSystem.getInstance();
+    public AttractivenessSystem attractivenessSystem = AttractivenessSystem.getInstance();
+    public SocialSystem socialSystem = SocialSystem.getInstance();
 
 
     ///////////////////////////////////////////////////////////////////////////
@@ -34,19 +34,20 @@ public class Person {
     private Person() {}
     ///////////////////////////////////////////////////////////////////////////
 
-    public void init(String startingCash, int startingEnergy, int startingHappiness, int startingHealth, int startingLuck){
+    public void init(String startingCash, int startingEnergy, int startingHappiness, int startingHealth, int startingLuck, int startingAttractiveness, int startingSocial){
         purseSystem.init(startingCash);
         energySystem.init(startingEnergy);
         happinessSystem.init(startingHappiness);
         healthSystem.init(startingHealth);
         luckSystem.init(startingLuck);
+        attractivenessSystem.init(startingAttractiveness);
+        socialSystem.init(startingSocial);
     }
 
     // Ageing System
     @Tested
-    public boolean agePerson() throws Exception {
-        time.incrementTime(2);
-        return true;
+    public void agePerson() throws Exception {
+        time.incrementTime((int) LocalConfig.defaultAgeingTimeInHours.getValue());
     }
     @Tested
     public String getDisplayAge() throws Exception {

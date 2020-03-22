@@ -60,4 +60,5 @@ public class OHaircutStyle {
     public void setHairstyleId(int hairstyleId) {
         this.hairstyleId = hairstyleId;
     }
+
 }

@@ -4,7 +4,7 @@ Virtual Realm is a Hyper-realistic Multidimensional multiplayer alternate realit
 
 ## The Project at a Glance
 
-This simulation is comprised of 3 perceivable entities
+This simulation is comprised of 2 perceivable entities
 1. YOU as a person.
 2. The world.
 

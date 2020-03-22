@@ -18,15 +18,16 @@ public class PurseSystem {
 
     @Tested
     public void init(String sInitializeCash){
-        BigDecimal initializeCash = new BigDecimal(sInitializeCash);
-        this.cashInPurse = initializeCash;
+        this.cashInPurse = new BigDecimal(sInitializeCash);
     }
+
     @Tested
     public boolean deposit(String sCashToDeposit){
         BigDecimal cashToDeposit = new BigDecimal(sCashToDeposit);
         this.cashInPurse = this.cashInPurse.add(cashToDeposit);
         return true;
     }
+
     @Tested
     public boolean withdraw(String sCashToWithdraw){
         BigDecimal cashToWithdraw = new BigDecimal(sCashToWithdraw);
@@ -36,20 +37,19 @@ public class PurseSystem {
         }
         return false;
     }
+
     @Tested
     public BigDecimal peekCashAsBigDecimal(){return this.cashInPurse;}
+
     @Tested
     public String peekCashAsString(){return String.valueOf(this.cashInPurse);}
 
     public boolean canAffordCash(BigDecimal cost){
-        if (peekCashAsBigDecimal().compareTo(cost) == 1) {
-            return true;
-        }
-        return false;
+        return peekCashAsBigDecimal().compareTo(cost) == 1;
     }
-    public boolean depleteAllCash(){
+
+    public void depleteAllCash(){
         cashInPurse = new BigDecimal("0");
-        return true;
     }
 
 

@@ -14,12 +14,14 @@ public abstract class AbstractSystem {
     public void init(int initializeCurrentEntity){
         this.currentEntity = initializeCurrentEntity;
     }
+
     @Tested
     public boolean gainEntity(int EntityToGain){
         int afterEntityGain = (currentEntity + EntityToGain);
         currentEntity = (afterEntityGain > maxEntity)? maxEntity : afterEntityGain;
         return true;
     }
+
     @Tested
     public boolean loseEntity(int EntityToLose){
         int afterEntityLost = (currentEntity - EntityToLose);
@@ -31,15 +33,18 @@ public abstract class AbstractSystem {
         }
         return false;
     }
+
     @Tested
     public boolean fillToMaxEntity(){
         this.currentEntity = maxEntity;
         return true;
     }
+
     @Tested
     public String peekEntityAsString(){
         return String.valueOf(currentEntity);
     }
+
     @Tested
     public int peekEntityAsValue(){
         return currentEntity;

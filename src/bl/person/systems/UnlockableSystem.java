@@ -25,9 +25,11 @@ public class UnlockableSystem {
         }
         return false;
     }
+
     public boolean checkIfIdIsUnlocked(int unlockableId){
         return idsUnlocked.contains(unlockableId);
     }
+
     public boolean removeUnlockedItemIfExists(int unlockableId){
         if (idsUnlocked.contains(unlockableId)) {
             idsUnlocked.remove(unlockableId);

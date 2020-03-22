@@ -4,9 +4,10 @@ import bl.helper.Objects.Coordinate;
 import bl.world.buildings.transport.modal.vehicleSystems.OEngine;
 import bl.world.buildings.transport.modal.vehicleSystems.OGasTank;
 import bl.world.buildings.transport.modal.vehicleSystems.OSafetyModule;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
-public @Data class OTransport {
+public class OTransport {
 
     VehicleTypes vehicleType;
     String vehicleName;
@@ -31,4 +32,27 @@ public @Data class OTransport {
         gasTank.gainEntity(gas);
     }
 
+    public VehicleTypes getVehicleType() {
+        return vehicleType;
+    }
+
+    public String getVehicleName() {
+        return vehicleName;
+    }
+
+    public OGasTank getGasTank() {
+        return gasTank;
+    }
+
+    public OEngine getEngine() {
+        return engine;
+    }
+
+    public OSafetyModule getSafetyModule() {
+        return safetyModule;
+    }
+
+    public Coordinate getCurrentCoordinate() {
+        return currentCoordinate;
+    }
 }

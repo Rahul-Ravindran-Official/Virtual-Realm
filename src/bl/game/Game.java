@@ -27,18 +27,18 @@ public class Game {
         // Getting World
         World world = World.getInstance();
 
-        int hoursInADayForInit = 24;
-        int daysForInit = 50;
+        int hoursInADayForInit = (Integer) LocalConfig.hoursInADay.getValue();
+        int daysForInit = (Integer) LocalConfig.daysForInit.getValue();
+        int timeInHoursOfInterestPaid = (Integer) LocalConfig.timeInHoursOfInterestPaidInit.getValue();
+        BigDecimal cashInSavingsAccount = (BigDecimal) LocalConfig.initialCashInSavingsAccount.getValue();
+
         int timePassedInHoursForInit = hoursInADayForInit * daysForInit;
-        int timeInHoursOfInterestPaid = -1;
-        BigDecimal cashInSavingsAccount = new BigDecimal("0");
 
         world.init(
                 timePassedInHoursForInit,
                 timeInHoursOfInterestPaid,
                 cashInSavingsAccount
         );
-
 
         // Getting Objects of Interest
         Person person = Person.getInstance();
@@ -47,7 +47,9 @@ public class Game {
                 config.getConfiguration("startingEnergy").getConfigValueAsInteger(),
                 config.getConfiguration("startingHappiness").getConfigValueAsInteger(),
                 config.getConfiguration("startingHealth").getConfigValueAsInteger(),
-                config.getConfiguration("startingLuck").getConfigValueAsInteger()
+                config.getConfiguration("startingLuck").getConfigValueAsInteger(),
+                config.getConfiguration("startingAttractiveness").getConfigValueAsInteger(),
+                config.getConfiguration("startingSocial").getConfigValueAsInteger()
         );
 
 

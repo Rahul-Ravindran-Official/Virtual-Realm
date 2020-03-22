@@ -18,10 +18,10 @@ public class SalonMaster extends InitializeCop {
     }
     private SalonMaster() {}
 
-    ArrayList<OHaircutStyle> hairStyle = new ArrayList<>();
+    private ArrayList<OHaircutStyle> hairStyle = new ArrayList<>();
 
     public void init() throws ParseException {
-        InitializeSalon.initializeSalon();
+        hairStyle = InitializeSalon.initializeSalon();
         initialized();
     }
 

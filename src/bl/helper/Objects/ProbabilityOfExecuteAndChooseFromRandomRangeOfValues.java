@@ -15,8 +15,7 @@ public class ProbabilityOfExecuteAndChooseFromRandomRangeOfValues {
 
     public int getValueConsideringProbability(){
         if (getBinaryFromProbability()){
-            int getRandomNumber = ThreadLocalRandom.current().nextInt(rangeLow, rangeHigh +1);
-            return getRandomNumber;
+            return ThreadLocalRandom.current().nextInt(rangeLow, rangeHigh +1);
         }
         return 0;
     }

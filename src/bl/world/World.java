@@ -45,18 +45,22 @@ public class World{
     ) throws Exception {
 
         time.init(timePassedInHours);
+
         restaurantMaster.init();
+
         realEstateMaster.init(
                 new HashMap<>()
         );
+
         jobMarketMaster.init(
                 new HashMap<>(),
                 null
         );
+
         bankMaster.init(
                 timeInHoursOfInterestLastPaid,
                 cashInSavingsAccount,
-                new HashMap()
+                new HashMap<>()
         );
 
         fuelStationMaster.init(
@@ -70,8 +74,7 @@ public class World{
                 null
         );
 
-        // Create API before re-enabling
-        // salonMaster.init();
+        salonMaster.init();
 
 
     }

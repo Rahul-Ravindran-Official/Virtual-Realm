@@ -17,7 +17,7 @@ public class InitializeSalon {
 
         ArrayList<HashMap<String,String>> getDataFromBackendlessJSON = NxMethods.getDataFromBackendlessJSON(
                 APIs.getSalonHairStyles,
-                new String[] { "hid", "haircut_style_name", "attractiveness", "cost_for_haircut", "base64_haircut_image" }
+                new String[] { "hid", "haircut_style_name", "attractiveness_boost", "cost_for_haircut", "base64_haircut_image" }
         );
 
         for (HashMap<String, String> record : getDataFromBackendlessJSON) {
