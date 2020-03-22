@@ -1,5 +1,7 @@
 # About
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3bd41aff88cc4c9cb069c288df19893d)](https://app.codacy.com/manual/Rahul-Ravindran-Official/Virtual-Realm?utm_source=github.com&utm_medium=referral&utm_content=Rahul-Ravindran-Official/Virtual-Realm&utm_campaign=Badge_Grade_Dashboard)
+
 Virtual Realm is a Hyper-realistic Multidimensional multiplayer alternate reality game that aims on simulating the world as it is to give people a second chance to live their life to their fullest.
 
 ## The Project at a Glance
